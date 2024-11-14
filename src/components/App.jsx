@@ -24,36 +24,13 @@ function App() {
     setInputValue(' ');
    }
 
-  //  const calculateResult = () => {
-  //   setInputValue(eval)
-  //  }
-  // const calculateResult = () => {
-  //    let finalValue=inputValue;
-  //    if(inputValue[inputValue.length-1] == '+' || inputValue[inputValue.length-1] =="-" || inputValue[inputValue.length-1] == "*" || inputValue[inputValue.length-1] == "/"){
-  //      finalValue = inputValue.slice(0, -1);
-  //    }
-  //   // const result = eval(finalValue);
-  //   // setInputValue(result.toString());
-  
-
-  // // function solve(){
-
-  //   let x = document.getElementById('calculateResult').value
-
-  //   let y = eval(x);
-
-  //   document.getElementById('calculateResult').value = y
-
-  //   return y;
-
-  // }
   const calculateResult = () => {
     let finalValue = inputValue;
     if (
-      inputValue[inputValue.length - 1] === '+' ||
-      inputValue[inputValue.length - 1] === '-' ||
-      inputValue[inputValue.length - 1] === '*' ||
-      inputValue[inputValue.length - 1] === '/'
+      inputValue[inputValue.length - 1] == '+' ||
+      inputValue[inputValue.length - 1] == '-' ||
+      inputValue[inputValue.length - 1] == '*' ||
+      inputValue[inputValue.length - 1] == '/'
     ) {
       finalValue = inputValue.slice(0, -1);
     }
